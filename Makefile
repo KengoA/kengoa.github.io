@@ -1,2 +1,2 @@
 build:
-	sudo bundle exec jekyll serve
+	sudo bundle exec jekyll serve --incremental
