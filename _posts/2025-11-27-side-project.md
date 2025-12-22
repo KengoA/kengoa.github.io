@@ -66,6 +66,14 @@ Although the official documentation is comprehensive, it's not obvious what the 
 
 ```
 
+<h4>Future Work</h4>
+
+Aside from going back to the actual side project I set out to do, there's several lines of work planned, including supporting more query parsers such as XML parsers along with clearer documentations.
+
+Also note that this client doesn't abstract away the Lucene query syntax in the query parameter, which can be provided as a util function in this client.
+
+---
+
 [Taiyo]: https://taiyoproj.github.io
 [GitHub]: https://github.com/taiyoproj/taiyo
 [Solr Query Guide]: https://solr.apache.org/guide/solr/latest/query-guide/query-syntax-and-parsers.html
