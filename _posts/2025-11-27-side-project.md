@@ -35,7 +35,9 @@ These characteristics imply that **(1)** we need to think of a document understa
 
 <h2>Searching for Search Servers</h2>
 
-![system](image.png)
+With the requirements above, I came up with a rough system design for necessary components for setting up the search pipeline, mostly around ingestion.
+
+<img src="/images/system.png" alt="system" class="article-img">
 
 With the exception of Meilisearch which is built in Rust, the mainstream enterprise search options are ElasticSearch, OpenSearch, and Apache Solr which are all built on Apache Lucene.
 
