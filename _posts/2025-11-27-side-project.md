@@ -59,32 +59,6 @@ Another source of confusion for new users is that pysolr exposes Solr’s query 
 
 <h2>The Side Project ^2</h2>
 
-<h4>Indexing</h4>
-
-```python
-
-import asyncio
-from taiyo import AsyncSolrClient, SolrDocument
-
-class MyDocument(SolrDocument):
-    title: str
-
-async with AsyncSolrClient("http://localhost:8983/solr") as client:
-    client.set_collection("my_collection")
-
-    # Split into batches and process concurrently
-    batch_size = 100
-    all_docs = [MyDocument(title=f"Doc {i}") for i in range(1000)]
-    
-    batches = [
-      all_docs[i:i + batch_size]
-      for i in range(0, len(all_docs), batch_size)
-    ]
-
-    # Index all batches concurrently
-    await asyncio.gather(*[client.add(batch, commit=False) for batch in batches])
-    await client.commit()
-```
 
 <h4>Query Parsers</h4>
 
@@ -110,6 +84,7 @@ results = solr.search(**params)
 huggingface-like configuration objects
 
 ```python
+
 from taiyo.params import GroupParamsConfig
 from taiyo.parsers import ExtendedDisMaxQueryParser
 
@@ -123,6 +98,7 @@ parser = ExtendedDisMaxQueryParser(
 ```
 
 pandas-like chaining 
+
 ```python
 from taiyo.parsers import ExtendedDisMaxQueryParser
 
