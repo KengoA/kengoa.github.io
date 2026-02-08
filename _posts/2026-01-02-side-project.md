@@ -90,7 +90,6 @@ I named this client Taiyo after the Japanese translation of the word _sun_ which
 Going back to the Extended DisMax query example. Taiyo now allows you to set up a query parser like the following:
 
 ```python
-
 from taiyo.params import GroupParamsConfig
 from taiyo.parsers import ExtendedDisMaxQueryParser
 
