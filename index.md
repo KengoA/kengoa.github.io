@@ -14,7 +14,7 @@ description: Thoughts and experiments on software engineering
 
 I like building scalable systems by day and trying to reinvent the wheel by night. I was looking for a quiet place on the Internet to document my thougths and experiments on software engineering for some time, and finally decided to start a blog in November 2024.
 
-I live in London and I'm currently taking a break. Previously I worked for a MLOps startup also in London and prior to that I was at a marketplace company in Tokyo, where I started my career in 2020.
+I live in London and work as a Software Engineer at Isomorphic Labs [^1]. I started my career at a marketplace company called Mercari in Tokyo in 2020, then I came back to London in 2022 and worked for Seldon and Bloomberg before joining the current company.
 
 The minimal design of this website is _heavily_ inspired by [Alex Molas's blog], whose content I also highly recommend.
 
@@ -34,3 +34,5 @@ The minimal design of this website is _heavily_ inspired by [Alex Molas's blog],
 {% endfor %}
 
 ---
+
+[^1]: Opinions expressed in this blog are solely my own and do not express the views of my employer.
